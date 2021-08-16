@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css" />
+<head>
+    <style>
+        .container{
+            margin: auto;
+            align-items: center;
+        }
+    </style>
+</head>
+<div  class="container">
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">You have logged in <%= data.name%> </p>
+<p class="lead mb-3">Email <%= data.email%> </p>
+<a href="/users/viewblog" class="btn btn-primary">View blogs</a>
+<a href="/users/createblog" class="btn btn-primary">Create blogs</a>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+</div>

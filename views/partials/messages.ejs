@@ -1,0 +1,40 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<% if(typeof errors!='undefined') { %>
+<% errors.forEach(function(error) {%>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <%= error.msg %>
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>     
+    </div>
+<%});%>
+<%}%>
+<% if(success_msg!=''){ %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <%= success_msg %>
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    </div>
+<% } %>
+
+<% if(error_msg!=''){ %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <%= error_msg %>
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    </div>
+<% } %>
+
+<% if(error!='' ){ %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <%= error %>
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    </div>
+<% } %>
+
+<% if(typeof blogerrors!='undefined' ) { %>
+    <% blogerrors.forEach(function(blogerror) {%>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <%= blogerror.msg %>
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+        <%});%>
+<%}%>
